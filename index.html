@@ -6,20 +6,21 @@
 <style>
     /* Centers the logo wrapper directly above your heading banner */
     .logo-center-wrapper {
-        text-align: center;
-        margin-top: 15px;
-        margin-bottom: 10px;
-        display: block;
-        width: 100%;
-    }
-    .logo-center-wrapper img {
-        height: 110px;       /* Fixed scale size matching your sub-index */
-        width: 110px;        /* Forces matching proportions for a clean circle box */
-        object-fit: cover;   /* Crops out empty image borders sharply */
-        border-radius: 50%;  /* Clips the outer tracking layers into a perfect circle */
-        border: 3px solid #f31414; /* Crimson red outline framing ring */
-        filter: drop-shadow(0px 0px 12px #f31414); /* Beautiful glowing dark red aura */
-    }
+    position: absolute;  /* Detaches it from the center flow */
+    left: 40px;          /* Places it safely over on the left side */
+    top: 15px;           /* Sets distance from the top edge */
+    display: block;
+    z-index: 999;        /* Keeps it layered safely above the background layout */
+}
+.logo-center-wrapper img {
+    height: 110px;       /* Keeps the large visible sizing scale */
+    width: 110px;        /* Equal dimensions for a perfect circle box */
+    object-fit: cover;   /* Cuts out empty outer image borders cleanly */
+    border-radius: 50%;  /* Forms the sharp circular shape */
+    border: 3px solid #f31414; /* Crimson red outline ring frame */
+    filter: drop-shadow(0px 0px 12px #f31414); /* Beautiful glowing red theme aura */
+}
+
 </style>
 </head>
 <body>
