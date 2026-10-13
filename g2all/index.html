@@ -4,10 +4,11 @@
 <title>WELCOME TO ASAR STORE</title>
 <link rel="stylesheet" href="../style.css">
 <style>
-   .logo-center-wrapper {
+  .logo-center-wrapper {
     position: absolute;  /* Detaches it from the center flow */
     left: 40px;          /* Places it safely over on the left side */
-    bottom: 25px;        /* Moves it down to the bottom-left corner */
+    top: 50%;            /* Moves the top edge to the exact vertical middle of the screen */
+    transform: translateY(-100%); /* Shifts it upward slightly so it centers perfectly and leaves room below */
     display: block;
     z-index: 999;        /* Keeps it layered safely above the background layout */
 }
@@ -19,6 +20,7 @@
     border: 3px solid #f31414; /* Crimson red outline ring frame */
     filter: drop-shadow(0px 0px 12px #f31414); /* Beautiful glowing red theme aura */
 }
+
 
 </style>
 </head>
